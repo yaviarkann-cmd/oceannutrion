@@ -1352,18 +1352,18 @@
     if (!phone) { alert('Mohon masukkan nomor WhatsApp Anda.'); return; }
 
     const msg =
-`Halo, Ocean Nutrition Clinic! 👋
+`Halo, Ocean Nutrition Clinic!
 
 Saya ingin melakukan *BOOKING KONSULTASI GIZI*.
 
-📋 *Detail Booking:*
+*Detail Booking:*
 • Nama: ${name}
 • No. WA: ${phone}
 • Layanan: ${service}
 • Tarif: Rp 200.000/sesi
 ${note ? '• Keluhan/Tujuan: ' + note : ''}
 
-Mohon konfirmasi jadwal konsultasi yang tersedia. Terima kasih! 🌊`;
+Mohon konfirmasi jadwal konsultasi yang tersedia. Terima kasih!`;
 
     const encoded = encodeURIComponent(msg);
     window.open('https://wa.me/' + WA_NUMBER + '?text=' + encoded, '_blank');
